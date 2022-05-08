@@ -26,8 +26,10 @@ addLayer("p", {
     ],
     layerShown(){return true},
     upgrades: {
-        title: "Multiply x2",
-        description: "Makes your point gain 2x faster.",
-        cost: new Decimal(1)
+        11: {
+            title: "Multiply x2",
+            description: "Makes your point gain 2x faster.",
+            cost: new Decimal(1)
+        }
     }
 })
