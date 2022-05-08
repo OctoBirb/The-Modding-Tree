@@ -3,7 +3,7 @@ let modInfo = {
 	id: "easytree",
 	author: "Octo Birb",
 	pointsName: "points",
-	modFiles: ["layers.js", "tree.js"],
+	modFiles: ["p.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
@@ -43,6 +43,8 @@ function getPointGen() {
 		return new Decimal(0)
 
 	let gain = new Decimal(1)
+	if (hasUpgrade("p", 11)) {gain = gain.times(2)}
+	if (hasUpgrade("p", 12)) {gain = gain.times()}
 	return gain
 }
 
